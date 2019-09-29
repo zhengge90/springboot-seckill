@@ -1,13 +1,22 @@
-node {
-    stage('build'){
-     echo 'build';
+#!/usr/bin/env groovy
+pipeline {
+  agent any
+
+  stages {
+    stage('Build') {
+        steps {
+            echo 'Building..'
+        }
     }
-    
-    stage('test'){
-     echo 'test';
+    stage('Test') {
+        steps {
+            echo 'Testing..'
+        }
     }
-    
-    stage('deploy'){
-     echo 'deploy';
+    stage('Deploy') {
+        steps {
+            echo 'Deploying....'
+        }
     }
+  }
 }
