@@ -9,6 +9,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class SpringbootSeckillApplicationTests {
 
+//1
     @Test
     public void contextLoads() {
 
