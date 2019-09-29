@@ -23,6 +23,7 @@ import java.util.List;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
+//a
 public class SeckillServiceImplTest {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
