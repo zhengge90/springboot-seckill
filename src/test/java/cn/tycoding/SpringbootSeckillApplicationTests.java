@@ -11,6 +11,7 @@ public class SpringbootSeckillApplicationTests {
 
     @Test
     public void contextLoads() {
+
     }
 
 }
