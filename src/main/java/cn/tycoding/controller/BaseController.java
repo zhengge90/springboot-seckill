@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @date 2018/10/8
  */
 @Controller
-//a103123
+//a1031232
 public class BaseController {
 
     /**
