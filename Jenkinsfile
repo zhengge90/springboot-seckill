@@ -10,7 +10,7 @@ pipeline {
     stage('Build') {
 
         steps {		
-		  compileAllFiles()	
+		// compileAllFiles()	
 			jarrun()
 			
 			
@@ -41,5 +41,5 @@ def jarrun()
 {
 	//启动jar
 	sh 'java -version'
-	//sh 'java  -jar  /var/jenkins_home/workspace/springboot-seckill2_master/*.jar '  
+	sh 'java  -jar  /var/jenkins_home/workspace/springboot-seckill2_master/*.jar'  
 }
