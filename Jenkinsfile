@@ -4,8 +4,8 @@ pipeline {
     stage('Build') {
 
         steps {
-		  echo 'Building6..'
-		  - /usr/local/docker/data/apache-maven-3.5.3/bin/mvn clean package
+		
+		 sh /usr/local/docker/data/apache-maven-3.5.3/bin/mvn clean package
 						
 			
         }
