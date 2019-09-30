@@ -34,6 +34,6 @@ pipeline {
 	def compileAllFiles()
 	{
 		//执行shell命令
-		sh 'mvn -f /var/jenkins_home/workspace/springboot-seckill2_master/pom.xml clean scala:compile compile package -DskipTests=true'
+		sh 'mvn -f /var/jenkins_home/workspace/springboot-seckill2_master/pom.xml clean install -DskipTests=true'
 		sh 'mvn -f /var/jenkins_home/workspace/springboot-seckill2_master/pom.xml clean package' 
 	}
