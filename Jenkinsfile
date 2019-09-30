@@ -11,7 +11,7 @@ pipeline {
 
         steps {		
 		  compileAllFiles()	
-			
+			jarrun()
 			
 			
         }
