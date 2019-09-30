@@ -40,6 +40,6 @@ def compileAllFiles()
 def jarrun()
 {
 	//启动jar
-	
-	sh 'java  -jar  /var/jenkins_home/workspace/springboot-seckill2_master/*.jar '  
+	sh 'java -version'
+	//sh 'java  -jar  /var/jenkins_home/workspace/springboot-seckill2_master/*.jar '  
 }
