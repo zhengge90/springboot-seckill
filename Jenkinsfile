@@ -1,12 +1,15 @@
 pipeline {
   agent any
+  
+       tools {
+        //工具名称必须在Jenkins 管理Jenkins → 全局工具配置中预配置。
+        maven 'maven-3.5.0'
+    }
   stages {
     stage('Build') {
 
-        steps {
-		
-		 sh /usr/local/docker/data/apache-maven-3.5.3/bin/mvn clean package
-						
+        steps {		
+		  compileAllFiles()			
 			
         }
 
@@ -23,4 +26,11 @@ pipeline {
       }
     }
   }
+  
+  def compileAllFiles()
+{
+    //执行shell命令
+    sh 'mvn -f /var/jenkins_home/workspace/springboot-seckill2_master/pom.xml clean scala:compile compile package -DskipTests=true'
+    sh 'mvn -f /var/jenkins_home/workspace/springboot-seckill2_master/pom.xml clean package' 
+}
 }
